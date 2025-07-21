@@ -4410,6 +4410,26 @@
       "secondary_tileset": "gTileset_MysteryEventsHouse",
       "border_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/border.bin",
       "blockdata_filepath": "data/layouts/SootopolisCity_MysteryEventsHouse_1F_StairsUnblocked/map.bin"
+    },
+    {
+      "id": "LAYOUT_GAME_BASIC",
+      "name": "GameBasic_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/GameBasic/border.bin",
+      "blockdata_filepath": "data/layouts/GameBasic/map.bin"
+    },
+    {
+      "id": "LAYOUT_STARTER_AREA",
+      "name": "StarterArea_Layout",
+      "width": 22,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/StarterArea/border.bin",
+      "blockdata_filepath": "data/layouts/StarterArea/map.bin"
     }
   ]
 }
