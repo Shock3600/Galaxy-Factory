@@ -14,30 +14,30 @@ StarterArea_Sign::
 	msgbox StarterArea_Text_Sign, MSGBOX_SIGN
 	end
 
-StarterArea_Starter1::
-	goto_if_unset FLAG_TEMP_2, StarterArea_StarterSet1
-	goto_if_unset FLAG_STARTER_1 StarterArea_StarterPick1
+StarterArea_Starter1A::
+	goto_if_unset FLAG_TEMP_2, StarterArea_StarterSet1A
+	goto_if_unset FLAG_STARTER_1 StarterArea_StarterPick1A
 	end
 
-StarterArea_Starter2::
-	goto_if_unset FLAG_TEMP_3, StarterArea_StarterSet2
-	goto_if_unset FLAG_STARTER_1 StarterArea_StarterPick2
+StarterArea_Starter1B::
+	goto_if_unset FLAG_TEMP_3, StarterArea_StarterSet1B
+	goto_if_unset FLAG_STARTER_1 StarterArea_StarterPick1B
 	end
 
-StarterArea_Starter3::
-	goto_if_unset FLAG_TEMP_4, StarterArea_StarterSet3
-	goto_if_unset FLAG_STARTER_1 StarterArea_StarterPick3
+StarterArea_Starter1C::
+	goto_if_unset FLAG_TEMP_4, StarterArea_StarterSet1C
+	goto_if_unset FLAG_STARTER_1 StarterArea_StarterPick1C
 	end
 	
-StarterArea_StarterSet1::
+StarterArea_StarterSet1A::
 	randomelement SPECIES_DIALGA, SPECIES_KYOGRE, SPECIES_GIRATINA_ORIGIN, SPECIES_GROUDON, SPECIES_DEOXYS_SPEED, SPECIES_DARKRAI, SPECIES_LATIAS, SPECIES_MEWTWO, SPECIES_BRONZONG, SPECIES_LATIOS, SPECIES_PALKIA, SPECIES_JIRACHI, SPECIES_RAYQUAZA, SPECIES_TYRANITAR, SPECIES_BLISSEY, SPECIES_SKARMORY, SPECIES_GARCHOMP, SPECIES_FORRETRESS, SPECIES_HEATRAN, SPECIES_DEOXYS_ATTACK, SPECIES_KABUTOPS, SPECIES_HO_OH, SPECIES_MANAPHY, SPECIES_SCIZOR, SPECIES_LUCARIO, SPECIES_WOBBUFFET, SPECIES_TENTACRUEL, SPECIES_KINGDRA, SPECIES_GIRATINA, SPECIES_LUGIA, SPECIES_QWILFISH, SPECIES_CRESSELIA, SPECIES_SHAYMIN_SKY, SPECIES_FROSLASS, SPECIES_MEW
 	copyvar VAR_TEMP_0, VAR_RESULT
 	bufferspeciesname STR_VAR_1, VAR_TEMP_0
 	setflag FLAG_TEMP_2
-	goto StarterArea_StarterPick1
+	goto StarterArea_StarterPick1A
 	end
 
-StarterArea_StarterPick1::
+StarterArea_StarterPick1A::
 	lock
 	msgbox StarterArea_Text_Starter1, MSGBOX_YESNO
 	compare VAR_RESULT, 0
@@ -51,15 +51,15 @@ StarterArea_StarterPick1::
 	release
 	end
 	
-StarterArea_StarterSet2::
+StarterArea_StarterSet1B::
 	randomelement SPECIES_DIALGA, SPECIES_KYOGRE, SPECIES_GIRATINA_ORIGIN, SPECIES_GROUDON, SPECIES_DEOXYS_SPEED, SPECIES_DARKRAI, SPECIES_LATIAS, SPECIES_MEWTWO, SPECIES_BRONZONG, SPECIES_LATIOS, SPECIES_PALKIA, SPECIES_JIRACHI, SPECIES_RAYQUAZA, SPECIES_TYRANITAR, SPECIES_BLISSEY, SPECIES_SKARMORY, SPECIES_GARCHOMP, SPECIES_FORRETRESS, SPECIES_HEATRAN, SPECIES_DEOXYS_ATTACK, SPECIES_KABUTOPS, SPECIES_HO_OH, SPECIES_MANAPHY, SPECIES_SCIZOR, SPECIES_LUCARIO, SPECIES_WOBBUFFET, SPECIES_TENTACRUEL, SPECIES_KINGDRA, SPECIES_GIRATINA, SPECIES_LUGIA, SPECIES_QWILFISH, SPECIES_CRESSELIA, SPECIES_SHAYMIN_SKY, SPECIES_FROSLASS, SPECIES_MEW
 	copyvar VAR_TEMP_1, VAR_RESULT
 	bufferspeciesname STR_VAR_2, VAR_TEMP_1
 	setflag FLAG_TEMP_3
-	goto StarterArea_StarterPick2
+	goto StarterArea_StarterPick1B
 	end
 
-StarterArea_StarterPick2::
+StarterArea_StarterPick1B::
 	lock
 	msgbox StarterArea_Text_Starter2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
@@ -74,15 +74,15 @@ StarterArea_StarterPick2::
 	end
 
 	
-StarterArea_StarterSet3::
+StarterArea_StarterSet1C::
 	randomelement SPECIES_DIALGA, SPECIES_KYOGRE, SPECIES_GIRATINA_ORIGIN, SPECIES_GROUDON, SPECIES_DEOXYS_SPEED, SPECIES_DARKRAI, SPECIES_LATIAS, SPECIES_MEWTWO, SPECIES_BRONZONG, SPECIES_LATIOS, SPECIES_PALKIA, SPECIES_JIRACHI, SPECIES_RAYQUAZA, SPECIES_TYRANITAR, SPECIES_BLISSEY, SPECIES_SKARMORY, SPECIES_GARCHOMP, SPECIES_FORRETRESS, SPECIES_HEATRAN, SPECIES_DEOXYS_ATTACK, SPECIES_KABUTOPS, SPECIES_HO_OH, SPECIES_MANAPHY, SPECIES_SCIZOR, SPECIES_LUCARIO, SPECIES_WOBBUFFET, SPECIES_TENTACRUEL, SPECIES_KINGDRA, SPECIES_GIRATINA, SPECIES_LUGIA, SPECIES_QWILFISH, SPECIES_CRESSELIA, SPECIES_SHAYMIN_SKY, SPECIES_FROSLASS, SPECIES_MEW
 	copyvar VAR_TEMP_2, VAR_RESULT
 	bufferspeciesname STR_VAR_3, VAR_TEMP_2
 	setflag FLAG_TEMP_4
-	goto StarterArea_StarterPick3
+	goto StarterArea_StarterPick1C
 	end
 
-StarterArea_StarterPick3::
+StarterArea_StarterPick1C::
 	lock
 	msgbox StarterArea_Text_Starter3, MSGBOX_YESNO
 	compare VAR_RESULT, 0
@@ -96,6 +96,87 @@ StarterArea_StarterPick3::
 	release
 	end
 
+StarterArea_Item1A::
+	goto_if_unset FLAG_TEMP_5, StarterArea_ItemSet1A
+	goto_if_unset FLAG_ITEM_1 StarterArea_ItemPick1A
+	end
+
+StarterArea_Item1B::
+	goto_if_unset FLAG_TEMP_6, StarterArea_ItemSet1B
+	goto_if_unset FLAG_ITEM_1 StarterArea_ItemPick1B
+	end
+
+StarterArea_Item1C::
+	goto_if_unset FLAG_TEMP_7, StarterArea_ItemSet1C
+	goto_if_unset FLAG_ITEM_1 StarterArea_ItemPick1C
+	end
+	
+StarterArea_ItemSet1A::
+	randomelement ITEM_LEFTOVERS
+	copyvar VAR_TEMP_3, VAR_RESULT
+	bufferitemname STR_VAR_1, VAR_TEMP_3
+	setflag FLAG_TEMP_5
+	goto StarterArea_ItemPick1A
+	end
+
+StarterArea_ItemPick1A::
+	lock
+	msgbox StarterArea_Text_Item1, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq Starter_Area_Terminate
+	giveitem VAR_TEMP_3
+	COPYVAR VAR_ITEM_1, VAR_TEMP_3
+	setflag FLAG_ITEM_1
+	removeobject 5
+	removeobject 6
+	removeobject 7
+	release
+	end
+	
+StarterArea_ItemSet1B::
+	randomelement ITEM_CHOICE_SCARF, ITEM_CHOICE_SPECS, ITEM_EXPERT_BELT, ITEM_FOCUS_SASH, ITEM_LIFE_ORB, ITEM_LUM_BERRY
+	copyvar VAR_TEMP_4, VAR_RESULT
+	bufferitemname STR_VAR_2, VAR_TEMP_4
+	setflag FLAG_TEMP_6
+	goto StarterArea_ItemPick1B
+	end
+
+StarterArea_ItemPick1B::
+	lock
+	msgbox StarterArea_Text_Item2, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq Starter_Area_Terminate
+	giveitem VAR_TEMP_4
+	COPYVAR VAR_ITEM_2, VAR_TEMP_4
+	setflag FLAG_ITEM_1
+	removeobject 5
+	removeobject 6
+	removeobject 7
+	release
+	end
+
+	
+StarterArea_ItemSet1C::
+	randomelement ITEM_CHOICE_BAND, ITEM_SALAC_BERRY, ITEM_SITRUS_BERRY, ITEM_CHESTO_BERRY, ITEM_CHOPLE_BERRY, ITEM_COLBUR_BERRY, ITEM_CUSTAP_BERRY, ITEM_HABAN_BERRY, ITEM_LIGHT_CLAY, ITEM_OCCA_BERRY, ITEM_PASSHO_BERRY, ITEM_SHUCA_BERRY, ITEM_WACAN_BERRY, ITEM_WIDE_LENS, ITEM_YACHE_BERRY
+	copyvar VAR_TEMP_5, VAR_RESULT
+	bufferitemname STR_VAR_3, VAR_TEMP_5
+	setflag FLAG_TEMP_7
+	goto StarterArea_ItemPick1C
+	end
+
+StarterArea_ItemPick1C::
+	lock
+	msgbox StarterArea_Text_Item3, MSGBOX_YESNO
+	compare VAR_RESULT, 0
+	goto_if_eq Starter_Area_Terminate
+	giveitem VAR_TEMP_5
+	COPYVAR VAR_ITEM_3, VAR_TEMP_5
+	setflag FLAG_ITEM_1
+	removeobject 5
+	removeobject 6
+	removeobject 7
+	release
+	end
 
 Starter_Area_Terminate::
 	release
@@ -114,5 +195,17 @@ StarterArea_Text_Starter2:
 	.string "{STR_VAR_2}?$"
 
 StarterArea_Text_Starter3:
+	.string "Would you like\n"
+	.string "{STR_VAR_3}?$"
+	
+StarterArea_Text_Item1:
+	.string "Would you like\n"
+	.string "{STR_VAR_1}?$"
+
+StarterArea_Text_Item2:
+	.string "Would you like\n"
+	.string "{STR_VAR_2}?$"
+
+StarterArea_Text_Item3:
 	.string "Would you like\n"
 	.string "{STR_VAR_3}?$"
