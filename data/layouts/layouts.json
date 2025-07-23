@@ -4424,8 +4424,8 @@
     {
       "id": "LAYOUT_STARTER_AREA",
       "name": "StarterArea_Layout",
-      "width": 22,
-      "height": 20,
+      "width": 6,
+      "height": 18,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/StarterArea/border.bin",
