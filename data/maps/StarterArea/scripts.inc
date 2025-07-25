@@ -4,16 +4,34 @@ StarterArea_MapScripts::
 StarterArea_SetFlags::
 	lock
 	setflag B_FLAG_NO_BAG_USE
-	setflag B_FLAG_AI_VS_AI_BATTLE
+	//setflag B_FLAG_AI_VS_AI_BATTLE
 	setflag B_FLAG_SLEEP_CLAUSE
 	setflag FLAG_SYS_POKEMON_GET
 	setflag FLAG_SYS_POKEDEX_GET
 	special SetUnlockedPokedexFlags
 	setflag FLAG_SYS_NATIONAL_DEX
 	special EnableNationalPokedex
-	giveitem ITEM_GRISEOUS_ORB, 1
-	giveitem ITEM_SOUL_DEW, 2
-	giveitem ITEM_LEFTOVERS, 6
+	additem ITEM_GRISEOUS_ORB, 1
+	additem ITEM_SOUL_DEW, 2
+	additem ITEM_LEFTOVERS, 6
+	additem ITEM_ADAMANT_MINT, 9
+	additem ITEM_MODEST_MINT, 9
+	additem ITEM_JOLLY_MINT, 9
+	additem ITEM_TIMID_MINT, 9
+	additem ITEM_NAIVE_MINT, 9
+	additem ITEM_RASH_MINT, 9
+	additem ITEM_BOLD_MINT, 9
+	additem ITEM_IMPISH_MINT, 9
+	additem ITEM_MILD_MINT, 9
+	additem ITEM_CALM_MINT, 9
+	additem ITEM_CAREFUL_MINT, 9
+	additem ITEM_HP_UP, 999
+	additem ITEM_PROTEIN, 999
+	additem ITEM_IRON, 999
+	additem ITEM_CALCIUM, 999
+	additem ITEM_ZINC, 999
+	additem ITEM_CARBOS, 999
+	additem ITEM_PP_MAX, 999
 	removeobject 1
 	setflag FLAG_TEMP_1
 	release
@@ -96,7 +114,7 @@ StarterArea_Item1A::
 	msgbox StarterArea_Text_Item1, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_eq StarterArea_Terminate
-	giveitem VAR_TEMP_3
+	additem VAR_TEMP_3
 	COPYVAR VAR_ITEM_1, VAR_TEMP_3
 	goto StarterArea_Clear0
 	end
@@ -108,7 +126,7 @@ StarterArea_Item1B::
 	msgbox StarterArea_Text_Item2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_eq StarterArea_Terminate
-	giveitem VAR_TEMP_4
+	additem VAR_TEMP_4
 	COPYVAR VAR_ITEM_2, VAR_TEMP_4
 	goto StarterArea_Clear0
 	end
@@ -120,7 +138,7 @@ StarterArea_Item1C::
 	msgbox StarterArea_Text_Item3, MSGBOX_YESNO
 	compare VAR_RESULT, 0
 	goto_if_eq StarterArea_Terminate
-	giveitem VAR_TEMP_5
+	additem VAR_TEMP_5
 	COPYVAR VAR_ITEM_3, VAR_TEMP_5
 	goto StarterArea_Clear0
 	end
@@ -230,7 +248,7 @@ StarterArea_Clear6::
 	end
 
 StarterArea_Fight1::
-	setflag B_FLAG_AI_VS_AI_BATTLE
+	//setflag B_FLAG_AI_VS_AI_BATTLE
 	trainerbattle_single TRAINER_FIGHT_1 StarterArea_Text_Fight1, StarterArea_Text_Fight1
 	msgbox StarterArea_Text_Fight1, MSGBOX_AUTOCLOSE
 	end

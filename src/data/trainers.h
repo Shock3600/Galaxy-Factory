@@ -42193,7 +42193,7 @@ F_TRAINER_FEMALE |
 #line 16883
         .battleType = TRAINER_BATTLE_TYPE_SINGLES,
 #line 16884
-        .aiFlags = AI_FLAG_BASIC_TRAINER,
+        .aiFlags = AI_FLAG_SMART_TRAINER,
 #line 16886
         .poolRuleIndex = POOL_RULESET_3V3,
 #line 16887
