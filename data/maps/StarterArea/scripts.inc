@@ -13,6 +13,7 @@ StarterArea_SetFlags::
 	special EnableNationalPokedex
 	giveitem ITEM_GRISEOUS_ORB, 1
 	giveitem ITEM_SOUL_DEW, 2
+	giveitem ITEM_LEFTOVERS, 6
 	removeobject 1
 	setflag FLAG_TEMP_1
 	release
@@ -28,8 +29,8 @@ StarterArea_Starter1A::
 	lock
 	msgbox StarterArea_Text_Starter1, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_eq Starter_Area_Terminate
-	givemon VAR_TEMP_0, 100
+	goto_if_eq StarterArea_Terminate
+	givemon VAR_TEMP_0, 100, hpIv= 31, atkIv= 31, defIv= 31, spAtkIv= 31, spDefIv= 31, speedIv= 31
 	COPYVAR VAR_STARTER_1, VAR_TEMP_0
 	goto StarterArea_Clear0
 	end
@@ -40,8 +41,8 @@ StarterArea_Starter1B::
 	lock
 	msgbox StarterArea_Text_Starter2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_eq Starter_Area_Terminate
-	givemon VAR_TEMP_1, 100
+	goto_if_eq StarterArea_Terminate
+	givemon VAR_TEMP_1, 100, hpIv= 31, atkIv= 31, defIv= 31, spAtkIv= 31, spDefIv= 31, speedIv= 31
 	COPYVAR VAR_STARTER_1, VAR_TEMP_1
 	goto StarterArea_Clear0
 	end
@@ -52,8 +53,8 @@ StarterArea_Starter1C::
 	lock
 	msgbox StarterArea_Text_Starter3, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_eq Starter_Area_Terminate
-	givemon VAR_TEMP_2, 100
+	goto_if_eq StarterArea_Terminate
+	givemon VAR_TEMP_2, 100, hpIv= 31, atkIv= 31, defIv= 31, spAtkIv= 31, spDefIv= 31, speedIv= 31
 	COPYVAR VAR_STARTER_1, VAR_TEMP_2
 	goto StarterArea_Clear0
 	end
@@ -94,7 +95,7 @@ StarterArea_Item1A::
 	lock
 	msgbox StarterArea_Text_Item1, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_eq Starter_Area_Terminate
+	goto_if_eq StarterArea_Terminate
 	giveitem VAR_TEMP_3
 	COPYVAR VAR_ITEM_1, VAR_TEMP_3
 	goto StarterArea_Clear0
@@ -106,7 +107,7 @@ StarterArea_Item1B::
 	lock
 	msgbox StarterArea_Text_Item2, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_eq Starter_Area_Terminate
+	goto_if_eq StarterArea_Terminate
 	giveitem VAR_TEMP_4
 	COPYVAR VAR_ITEM_2, VAR_TEMP_4
 	goto StarterArea_Clear0
@@ -118,14 +119,15 @@ StarterArea_Item1C::
 	lock
 	msgbox StarterArea_Text_Item3, MSGBOX_YESNO
 	compare VAR_RESULT, 0
-	goto_if_eq Starter_Area_Terminate
+	goto_if_eq StarterArea_Terminate
 	giveitem VAR_TEMP_5
 	COPYVAR VAR_ITEM_3, VAR_TEMP_5
 	goto StarterArea_Clear0
 	end
 	
 StarterArea_ItemSet1A::
-	randomelement ITEM_LEFTOVERS
+	//randomelement ITEM_LEFTOVERS
+	randomelement ITEM_CHOICE_BAND, ITEM_SALAC_BERRY, ITEM_SITRUS_BERRY, ITEM_CHESTO_BERRY, ITEM_CHOPLE_BERRY, ITEM_COLBUR_BERRY, ITEM_CUSTAP_BERRY, ITEM_HABAN_BERRY, ITEM_LIGHT_CLAY, ITEM_OCCA_BERRY, ITEM_PASSHO_BERRY, ITEM_SHUCA_BERRY, ITEM_WACAN_BERRY, ITEM_WIDE_LENS, ITEM_YACHE_BERRY
 	copyvar VAR_TEMP_3, VAR_RESULT
 	bufferitemname STR_VAR_1, VAR_TEMP_3
 	setflag FLAG_TEMP_5
@@ -227,13 +229,17 @@ StarterArea_Clear6::
 	release
 	end
 
-//StarterArea_Fight1::
-//	trainerbattle_single
-//	end
+StarterArea_Fight1::
+	setflag B_FLAG_AI_VS_AI_BATTLE
+	trainerbattle_single TRAINER_FIGHT_1 StarterArea_Text_Fight1, StarterArea_Text_Fight1
+	msgbox StarterArea_Text_Fight1, MSGBOX_AUTOCLOSE
+	end
 
-Starter_Area_Terminate::
+StarterArea_Terminate::
 	release
 	end
+
+StarterArea_Text_Fight1:
 
 StarterArea_Text_Sign:
 	.string "Just setting\n"

@@ -72,6 +72,7 @@ Comments can be added as C comment blocks
 
 /*Comments can also be on a single line*/
 
+
 === TRAINER_NONE ===
 Name:
 Class: Pkmn Trainer 1
@@ -16872,3 +16873,784 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_FIGHT_1 ===
+Name: NOOB
+Class: Expert
+Pic: Expert M
+Gender: Male
+Music: Male
+Double Battle: No
+AI: Basic Trainer
+Party Size: 3
+Pool Rules: 3v3
+Pool Pick Functions: Default
+Pool Prune: None
+
+Darkrai @ Lum Berry  
+Ability: Bad Dreams  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+- Nasty Plot  
+- Dark Void  
+- Dark Pulse  
+- Focus Blast  
+
+Darkrai @ Choice Scarf  
+Ability: Bad Dreams  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+Tags: Lead / Speed
+- Trick  
+- Dark Void  
+- Dark Pulse  
+- Ice Beam  
+
+Darkrai @ Leftovers  
+Ability: Bad Dreams  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 30 HP / 0 Atk  
+- Substitute  
+- Dark Void  
+- Dark Pulse  
+- Focus Blast  
+
+Darkrai @ Focus Sash  
+Ability: Bad Dreams  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+Tags: Lead
+- Nasty Plot  
+- Dark Void  
+- Dark Pulse  
+- Focus Blast  
+
+Darkrai @ Life Orb  
+Ability: Bad Dreams  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+- Nasty Plot  
+- Dark Pulse  
+- Focus Blast  
+- Dark Void  
+
+Deoxys-Attack @ Focus Sash  
+Ability: Pressure  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Rash Nature  
+Tags: Lead
+- Spikes  
+- Thunder  
+- Signal Beam  
+- Extreme Speed  
+
+Deoxys-Attack @ Focus Sash  
+Ability: Pressure  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Rash Nature  
+Tags: Lead
+- Spikes  
+- Thunder  
+- Superpower  
+- Extreme Speed  
+
+Deoxys-Attack @ Focus Sash  
+Ability: Pressure  
+EVs: 252 Atk / 4 Def / 252 Spe  
+Adamant Nature 
+Tags: Lead 
+- Spikes  
+- Fire Punch  
+- Superpower  
+- Extreme Speed
+
+Deoxys-Attack @ Life Orb  
+Ability: Pressure  
+EVs: 16 Atk / 252 SpA / 240 Spe  
+Rash Nature  
+Tags: Speed
+- Ice Beam  
+- Thunder  
+- Superpower  
+- Extreme Speed  
+
+Deoxys-Speed @ Choice Scarf  
+Ability: Pressure  
+EVs: 248 HP / 164 Def / 96 SpD  
+Calm Nature  
+IVs: 0 Atk / 30 Spe  
+Tags: Lead
+- Trick  
+- Spikes  
+- Thunder Wave  
+- Taunt  
+
+Deoxys-Speed @ Focus Sash  
+Ability: Pressure  
+EVs: 252 HP / 4 SpD / 252 Spe  
+Jolly Nature  
+Tags: Lead / Rocks
+- Taunt  
+- Stealth Rock  
+- Spikes  
+- Extreme Speed  
+
+Deoxys-Speed @ Colbur Berry  
+Ability: Pressure  
+EVs: 252 HP / 164 SpD / 92 Spe  
+Jolly Nature  
+Tags: Lead
+- Spikes  
+- Stealth Rock  
+- Thunder Wave  
+- Extreme Speed  
+
+Dialga @ Leftovers  
+Ability: Pressure  
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+Tags: OgreCheck
+- Dragon Pulse  
+- Thunder  
+- Roar  
+- Earth Power  
+
+Dialga @ Leftovers  
+Ability: Pressure  
+EVs: 252 HP / 4 Atk / 252 SpD  
+Careful Nature  
+- Bulk Up  
+- Outrage  
+- Rest  
+- Sleep Talk  
+
+Dialga @ Leftovers  
+Ability: Pressure  
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+Tags: OgreCheck / Rocks
+- Dragon Pulse  
+- Thunder  
+- Stealth Rock  
+- Earth Power  
+
+Dialga @ Choice Specs  
+Ability: Pressure  
+EVs: 224 HP / 252 SpA / 32 Spe  
+Modest Nature  
+- Draco Meteor  
+- Dragon Pulse  
+- Thunder  
+- Fire Blast  
+
+Dialga @ Choice Scarf  
+Ability: Pressure  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+Tags: Speed
+- Draco Meteor  
+- Thunder  
+- Fire Blast  
+- Dragon Pulse  
+
+Dialga @ Life Orb  
+Ability: Pressure  
+EVs: 144 HP / 252 SpA / 112 Spe  
+Mild Nature  
+- Draco Meteor  
+- Outrage  
+- Fire Blast  
+- Thunder  
+
+Dialga @ Life Orb  
+Ability: Pressure  
+EVs: 144 HP / 252 SpA / 112 Spe  
+Mild Nature  
+- Draco Meteor  
+- Brick Break  
+- Fire Blast  
+- Thunder  
+
+Garchomp @ Choice Scarf  
+Ability: Sand Veil  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+Tags: Speed
+- Outrage  
+- Earthquake  
+- Dragon Claw  
+- Sleep Talk  
+
+Garchomp @ Salac Berry  
+Ability: Sand Veil  
+EVs: 12 HP / 244 Atk / 252 Spe  
+Jolly Nature  
+- Swords Dance  
+- Substitute  
+- Dragon Claw  
+- Earthquake  
+
+Giratina @ Leftovers  
+Ability: Pressure  
+EVs: 248 HP / 248 Def / 12 SpD  
+Impish Nature  
+Tags: DonCheck
+- Roar  
+- Rest  
+- Sleep Talk  
+- Earthquake  
+
+Giratina-Origin @ Griseous Orb  
+Ability: Levitate  
+EVs: 64 Atk / 200 Def / 184 SpA / 60 Spe  
+Rash Nature  
+Tags: DonCheck
+- Draco Meteor  
+- Shadow Sneak  
+- Thunder  
+- Outrage  
+
+Giratina-Origin @ Griseous Orb  
+Ability: Levitate  
+EVs: 84 HP / 216 SpA / 96 SpD / 112 Spe  
+Modest Nature  
+IVs: 0 Atk  
+- Calm Mind  
+- Shadow Ball  
+- Aura Sphere  
+- Substitute  
+
+Groudon @ Leftovers  
+Ability: Drought  
+EVs: 252 HP / 4 Atk / 252 SpD  
+Sassy Nature  
+Tags: Rocks
+- Earthquake  
+- Dragon Claw  
+- Thunder Wave  
+- Stealth Rock  
+
+Groudon @ Leftovers  
+Ability: Drought  
+EVs: 252 HP / 16 Atk / 104 SpD / 136 Spe  
+Adamant Nature  
+- Rock Polish  
+- Swords Dance  
+- Earthquake  
+- Dragon Claw  
+
+Groudon @ Life Orb  
+Ability: Drought  
+EVs: 112 HP / 252 Atk / 8 Def / 136 Spe  
+Adamant Nature  
+- Rock Polish  
+- Earthquake  
+- Fire Punch  
+- Dragon Claw  
+
+Ho-Oh @ Choice Band  
+Ability: Pressure  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Sacred Fire  
+- Brave Bird  
+- Earthquake  
+- Sleep Talk  
+
+Ho-Oh @ Leftovers  
+Ability: Pressure  
+EVs: 208 HP / 252 Atk / 48 Spe  
+Adamant Nature  
+Tags: DonCheck
+- Sacred Fire  
+- Brave Bird  
+- Substitute  
+- Roost  
+
+Kyogre @ Leftovers  
+Ability: Drizzle  
+EVs: 252 HP / 108 Def / 92 SpA / 56 SpD  
+Modest Nature  
+- Calm Mind  
+- Thunder Wave  
+- Hydro Pump  
+- Ice Beam  
+
+Kyogre @ Choice Specs  
+Ability: Drizzle  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+- Water Spout  
+- Surf  
+- Ice Beam  
+- Thunder  
+
+Kyogre @ Choice Scarf  
+Ability: Drizzle  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+Tags: Lead / Speed
+- Water Spout  
+- Surf  
+- Ice Beam  
+- Thunder  
+
+Kyogre @ Leftovers  
+Ability: Drizzle  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+- Calm Mind  
+- Surf  
+- Ice Beam  
+- Thunder  
+
+Kyogre @ Lum Berry  
+Ability: Drizzle  
+EVs: 144 HP / 252 SpA / 112 Spe  
+Modest Nature  
+Tags: Lead
+- Thunder Wave  
+- Hydro Pump  
+- Ice Beam  
+- Thunder  
+
+Latios (M) @ Soul Dew  
+Ability: Levitate  
+EVs: 4 HP / 252 SpA / 252 Spe  
+Timid Nature  
+Tags: OgreCheck
+- Calm Mind  
+- Draco Meteor  
+- Thunder  
+- Recover  
+
+Lugia @ Leftovers  
+Ability: Pressure  
+EVs: 252 HP / 64 Def / 192 Spe  
+Timid Nature  
+IVs: 0 Atk  
+Tags: DonCheck
+- Roost  
+- Substitute  
+- Whirlwind  
+- Ice Beam  
+
+Manaphy @ Leftovers  
+Ability: Hydration  
+EVs: 80 HP / 252 SpA / 176 Spe  
+Timid Nature  
+- Tail Glow  
+- Rest  
+- Surf  
+- Ice Beam  
+
+Manaphy @ Leftovers  
+Ability: Hydration  
+EVs: 252 HP / 4 SpA / 252 Spe  
+Timid Nature  
+Tags: DonCheck
+- Calm Mind  
+- Rest  
+- Surf  
+- Ice Beam  
+
+Mew @ Lum Berry  
+Ability: Synchronize  
+EVs: 252 HP / 184 Atk / 36 Def / 36 SpD  
+Adamant Nature  
+Tags: Lead / Rocks
+- Taunt  
+- Stealth Rock  
+- Explosion  
+- U-turn  
+
+Mew @ Lum Berry  
+Ability: Synchronize  
+EVs: 252 HP / 188 SpD / 68 Spe  
+Calm Nature  
+IVs: 0 Atk  
+- Rock Polish  
+- Calm Mind  
+- Taunt  
+- Baton Pass  
+
+Mewtwo @ Leftovers  
+Ability: Pressure  
+EVs: 252 HP / 4 SpA / 252 Spe  
+Timid Nature  
+Tags: Speed
+- Calm Mind  
+- Ice Beam  
+- Aura Sphere  
+- Recover  
+
+Mewtwo @ Life Orb  
+Ability: Pressure  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Naive Nature  
+Tags: Speed
+- Aura Sphere  
+- Ice Beam  
+- Self-Destruct  
+- Fire Blast  
+
+Palkia @ Choice Scarf  
+Ability: Pressure  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+Tags: Speed / OgreCheck
+- Spacial Rend  
+- Thunder  
+- Hydro Pump  
+- Fire Blast  
+
+Palkia @ Expert Belt  
+Ability: Pressure  
+EVs: 100 Atk / 156 SpA / 252 Spe  
+Hasty Nature  
+Tags: OgreCheck
+- Substitute  
+- Focus Punch  
+- Spacial Rend  
+- Thunder  
+
+Palkia @ Lum Berry  
+Ability: Pressure  
+EVs: 4 Atk / 252 SpA / 252 Spe  
+Hasty Nature  
+Tags: OgreCheck
+- Spacial Rend  
+- Hydro Pump  
+- Focus Punch  
+- Thunder  
+
+Rayquaza @ Life Orb  
+Ability: Air Lock  
+EVs: 32 HP / 252 Atk / 8 SpD / 216 Spe  
+Jolly Nature  
+- Dragon Dance  
+- Outrage  
+- Earthquake  
+- Overheat  
+
+Rayquaza @ Life Orb  
+Ability: Air Lock  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Adamant Nature  
+- Swords Dance  
+- Extreme Speed  
+- Dragon Claw  
+- Overheat  
+
+Rayquaza @ Life Orb  
+Ability: Air Lock  
+EVs: 40 Atk / 252 SpA / 216 Spe  
+Hasty Nature  
+- Draco Meteor  
+- Fire Blast  
+- Extreme Speed  
+- Outrage  
+
+Rayquaza @ Focus Sash  
+Ability: Air Lock  
+EVs: 40 Atk / 252 SpA / 216 Spe  
+Hasty Nature  
+Tags: Lead
+- Draco Meteor  
+- Outrage  
+- Extreme Speed  
+- Fire Blast  
+
+Shaymin-Sky @ Choice Scarf  
+Ability: Serene Grace  
+EVs: 4 HP / 252 SpA / 252 Spe  
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Timid Nature  
+Tags: Lead / Speed
+- Seed Flare  
+- Air Slash  
+- Earth Power  
+- Hidden Power
+
+Wobbuffet @ Leftovers  
+Ability: Shadow Tag  
+EVs: 28 HP / 228 Def / 252 SpD  
+Calm Nature  
+Tags: DracoCheck
+- Encore  
+- Counter  
+- Mirror Coat  
+- Safeguard  
+
+Blissey (F) @ Leftovers  
+Ability: Natural Cure  
+EVs: 4 HP / 252 Def / 252 SpD  
+Calm Nature  
+Tags: OgreCheck / Speed
+- Soft-Boiled  
+- Seismic Toss  
+- Toxic  
+- Aromatherapy  
+
+Blissey (F) @ Leftovers  
+Ability: Natural Cure  
+EVs: 4 HP / 252 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+Tags: OgreCheck / Speed / Rocks
+- Soft-Boiled  
+- Seismic Toss  
+- Toxic  
+- Stealth Rock  
+
+Blissey (F) @ Leftovers  
+Ability: Natural Cure  
+EVs: 4 HP / 252 Def / 252 SpD  
+Calm Nature  
+IVs: 0 Atk  
+Tags: OgreCheck / Speed
+- Seismic Toss  
+- Thunder Wave  
+- Healing Wish  
+- Soft-Boiled  
+
+Bronzong @ Leftovers  
+Ability: Levitate  
+EVs: 252 HP / 8 Def / 248 SpD  
+Careful Nature  
+Tags: DracoCheck / Rocks
+- Stealth Rock  
+- Payback  
+- Earthquake  
+- Explosion  
+
+Bronzong @ Leftovers  
+Ability: Levitate  
+EVs: 236 HP / 248 SpD / 24 Spe  
+Careful Nature  
+Tags: DracoCheck / Rocks / DonCheck
+- Stealth Rock  
+- Earthquake  
+- Trick Room  
+- Explosion  
+
+Forretress @ Focus Sash  
+Ability: Sturdy  
+EVs: 248 HP / 248 SpD / 12 Spe  
+Careful Nature  
+IVs: 0 Atk  
+Tags: Lead
+- Rapid Spin  
+- Spikes  
+- Toxic Spikes  
+- Rest  
+
+Forretress @ Chesto Berry  
+Ability: Sturdy  
+EVs: 248 HP / 248 SpD / 12 Spe  
+Careful Nature  
+IVs: 0 Atk  
+Tags: Lead
+- Rapid Spin  
+- Spikes  
+- Toxic Spikes  
+- Rest  
+
+Forretress @ Wave Mail  
+Ability: Sturdy  
+EVs: 248 HP / 248 SpD / 12 Spe  
+Careful Nature  
+IVs: 0 Atk  
+Tags: Lead
+- Rapid Spin  
+- Spikes  
+- Toxic Spikes  
+- Rest  
+
+Heatran @ Leftovers  
+Ability: Flash Fire  
+EVs: 252 HP / 4 Def / 252 SpD  
+Calm Nature  
+Tags: DracoCheck
+- Taunt  
+- Protect  
+- Lava Plume  
+- Toxic  
+
+Jirachi @ Leftovers  
+Ability: Serene Grace  
+EVs: 252 HP / 8 Def / 216 SpD / 32 Spe  
+Careful Nature  
+Tags: DracoCheck
+- Wish  
+- U-turn  
+- Iron Head  
+- Protect  
+
+Jirachi @ Choice Scarf  
+Ability: Serene Grace  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+Tags: DracoCheck / Speed
+- Iron Head  
+- Trick  
+- Ice Punch  
+- U-turn  
+
+Jirachi @ Choice Scarf  
+Ability: Serene Grace  
+EVs: 4 HP / 252 Atk / 252 Spe  
+Jolly Nature  
+Tags: DracoCheck / Speed
+- Iron Head  
+- Trick  
+- Ice Punch  
+- Healing Wish  
+
+Jirachi @ Leftovers  
+Ability: Serene Grace  
+EVs: 252 HP / 8 Def / 216 SpD / 32 Spe  
+Careful Nature  
+Tags: DracoCheck / Rocks
+- Wish  
+- Protect  
+- Iron Head  
+- Stealth Rock  
+
+Latias (F) @ Soul Dew  
+Ability: Levitate  
+EVs: 112 HP / 204 SpA / 192 Spe  
+Timid Nature  
+Tags: OgreCheck
+- Calm Mind  
+- Draco Meteor  
+- Thunder  
+- Recover  
+
+Latias (F) @ Soul Dew  
+Ability: Levitate  
+EVs: 112 HP / 144 SpA / 252 Spe  
+Timid Nature  
+IVs: 0 Atk  
+Tags: OgreCheck
+- Draco Meteor  
+- Thunder  
+- Healing Wish  
+- Recover  
+
+Lucario @ Life Orb  
+Ability: Inner Focus  
+EVs: 252 Atk / 4 SpD / 252 Spe  
+Jolly Nature  
+Tags: DracoCheck
+- Swords Dance  
+- Close Combat  
+- Extreme Speed  
+- Crunch  
+
+Scizor @ Choice Band  
+Ability: Technician  
+EVs: 200 HP / 56 Atk / 252 SpD  
+Adamant Nature  
+Tags: DracoCheck / Speed
+- U-turn  
+- Bullet Punch  
+- Superpower  
+- Pursuit  
+
+Scizor @ Life Orb  
+Ability: Technician  
+EVs: 176 HP / 100 Atk / 232 SpD  
+Adamant Nature  
+Tags: DracoCheck
+- Pursuit  
+- U-turn  
+- Roost  
+- Bullet Punch  
+
+Scizor @ Leftovers  
+Ability: Technician  
+EVs: 244 HP / 20 Atk / 76 Def / 168 SpD  
+Careful Nature  
+Tags: DracoCheck
+- Roost  
+- U-turn  
+- Bullet Punch  
+- Brick Break  
+
+Skarmory @ Leftovers  
+Ability: Keen Eye  
+EVs: 252 HP / 16 Def / 240 SpD  
+Impish Nature  
+Tags: DracoCheck / DonCheck
+- Spikes  
+- Roost  
+- Whirlwind  
+- Toxic  
+
+Tyranitar @ Focus Sash  
+Ability: Sand Stream  
+EVs: 176 Atk / 80 SpA / 252 Spe  
+Hasty Nature  
+Tags: Lead / Rocks
+- Stealth Rock  
+- Payback  
+- Fire Blast  
+- Superpower  
+
+Tyranitar @ Lum Berry  
+Ability: Sand Stream  
+EVs: 248 HP / 120 Atk / 80 SpA / 60 SpD  
+Brave Nature  
+Tags: Lead / Rocks
+- Stealth Rock  
+- Payback  
+- Fire Blast  
+- Superpower  
+
+Tyranitar @ Choice Band  
+Ability: Sand Stream  
+EVs: 252 HP / 252 Atk / 4 SpD  
+Adamant Nature  
+Tags: Lead
+- Payback  
+- Pursuit  
+- Stone Edge  
+- Superpower  
+
+Cresselia (F) @ Leftovers  
+Ability: Levitate  
+EVs: 252 HP / 252 Def / 4 SpD  
+IVs: 31 HP / 30 Atk / 30 Def / 31 SpA / 31 SpD / 31 Spe
+Bold Nature  
+Tags: DonCheck
+- Ice Beam  
+- Moonlight  
+- Thunder Wave  
+- Hidden Power
+
+Froslass (F) @ Focus Sash  
+Ability: Snow Cloak  
+EVs: 252 SpA / 4 SpD / 252 Spe  
+Timid Nature  
+Tags: Lead
+- Spikes  
+- Icy Wind  
+- Shadow Ball  
+- Destiny Bond  
+
+Tentacruel @ Lum Berry  
+Ability: Clear Body  
+EVs: 200 HP / 20 SpA / 68 SpD / 220 Spe  
+Timid Nature  
+Tags: Lead
+- Toxic Spikes  
+- Rapid Spin  
+- Ice Beam  
+- Hydro Pump  
+
